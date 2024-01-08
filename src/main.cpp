@@ -2,8 +2,8 @@
 #include "GLFW/glfw3.h"
 
 const char* window_title = "gfx foundation";
-const int window_width = 1280;
-const int window_height = 800;
+constexpr int window_width = 1280;
+constexpr int window_height = 800;
 
 int main() {
     std::cout << "Starting GLFW..." << std::endl;
