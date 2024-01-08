@@ -1,4 +1,0 @@
-/Users/luansapelli/Projects/gfx-foundation/cmake-build-debug/CMakeFiles/gfx_foundation.dir
-/Users/luansapelli/Projects/gfx-foundation/cmake-build-debug/CMakeFiles/glad.dir
-/Users/luansapelli/Projects/gfx-foundation/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/luansapelli/Projects/gfx-foundation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
