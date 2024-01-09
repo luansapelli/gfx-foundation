@@ -23,8 +23,6 @@ git clone https://github.com/luansapelli/gfx-foundation.git
 Feel free to modify the main.cpp file to include your graphics rendering logic. 
 Add shaders, textures, and other OpenGL components as needed for your specific project.
 
-![img.png](img.png)
-
 ## Notes
 * The provided code sets up a GLFW window and OpenGL context with a version of 4.6, using the core profile.
 * I am using CLion as IDE for this project, the current configuration was made to CLion IDE. You can use any IDE
