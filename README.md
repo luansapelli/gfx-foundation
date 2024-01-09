@@ -1,4 +1,4 @@
-# GFX Foundation - GLFW Boilerplate
+# OpenGL GFX Boilerplate
 
 This is a minimalistic GFX (Graphics) programming project boilerplate using GLFW (Graphics Library Framework). 
 It serves as a starting point for setting up a GLFW-based project with OpenGL. 
