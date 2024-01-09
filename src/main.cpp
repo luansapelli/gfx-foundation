@@ -1,9 +1,15 @@
 #include "iostream"
+#include <glad/glad.h>
 #include "GLFW/glfw3.h"
 
 const char* window_title = "gfx foundation";
 constexpr int window_width = 1280;
 constexpr int window_height = 800;
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
+    // Make sure the viewport matches the new window dimensions
+    glViewport(0, 0, width, height);
+}
 
 int main() {
     std::cout << "Starting GLFW..." << std::endl;
@@ -36,6 +42,17 @@ int main() {
     // Forward compatibility with macOS
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
+
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        return -1;
+    }
+
+    glViewport(0, 0, window_width, window_height);
+
+    // Register the framebuffer_size_callback function
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     // Loop until the user closes the window
     while (!glfwWindowShouldClose(window)) {
